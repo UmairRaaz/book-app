@@ -5,7 +5,7 @@ import AddBook from './Components/AddBook';
 import ListOfBooks from './Components/ListOfBooks';
 import NavbarComponent from './Components/NavbarComponent';
 import NavigationButtons from './Components/NavigationButtons';
-import { BrowserRouter as Router, Routes, Route,  useLocation, Navigate, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route,  useLocation, Navigate } from 'react-router-dom';
 import LoginPanel from './Components/LoginPanel';
 import Register from './Components/Register';
 
@@ -52,7 +52,7 @@ function App() {
       {/* <NavigationButtons /> */}
       <Navigation />
         <Routes>
-          <Route path="/" element={<ListOfBooks bookData={booksInfo} bookInfo={bookDetails} onDeleteBook={deleteBook} editBook={editBook} />} />
+          <Route path="/book-app" element={<ListOfBooks bookData={booksInfo} bookInfo={bookDetails} onDeleteBook={deleteBook} editBook={editBook} />} />
 
           <Route path="/addBook" element={ isLogin ? (<AddBook bookInfo={bookDetails} bookEdit={editIndex} bookData={booksInfo} onDeleteBook={deleteBook} editBook={editBook} />) : ( <Navigate to="/LoginPanel"  />)}
         />

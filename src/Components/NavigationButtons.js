@@ -17,7 +17,7 @@ const NavigationButtons = () => {
     }
     return (
         <div className="d-flex justify-content-center my-5 gap-5">
-            <Link to="/">
+            <Link to="/book-app">
                 <Button variant={active ? "dark" : "light"} active={active} onClick={listButton} size="lg" className="me-2">List Of Books</Button>
             </Link>
 

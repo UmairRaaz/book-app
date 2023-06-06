@@ -39,7 +39,7 @@ const AddBook = (props) => {
 
   }
   const buttonHandle = () => {
-    if (bookName == "" && authorName == "" && price == "") {
+    if (bookName === "" && authorName === "" && price === "") {
       setbutton(true);
     } else {
       setbutton(false);

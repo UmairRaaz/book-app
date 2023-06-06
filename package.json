@@ -1,6 +1,6 @@
 {
+  "homepage": "https://UmairRaaz.github.io/book-app",
   "name": "bookmanagmnet",
-  "homepage": "https://UmairRaaz.github.io/bookManagmentApp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
